@@ -26,7 +26,7 @@ Vite js
 Redux/toolkit
 
 ## Установка и запуск проекта:
-Клонировать репозиторий с gitHub:  ; 
+Клонировать репозиторий с gitHub: https://github.com/Arvik1982/study_test ; 
 Установить заисимости: npm install; 
 Запуск: npm run dev; 
 Для работы с приложением перейдите: http://localhost:5173/

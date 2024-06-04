@@ -85,7 +85,7 @@ export default function QuestionElement({ type }: QuestionPropType) {
       {typeSelectInput(type) === 'text' && (
         <input
           value={
-            textValueAnswer(questNumber, currentAnswers, testData)
+            textValueAnswer(questNumber, currentAnswers, testData)!=='undefined'
               ? textValueAnswer(questNumber, currentAnswers, testData)
               : ''
           }
@@ -99,7 +99,7 @@ export default function QuestionElement({ type }: QuestionPropType) {
       {typeSelectInput(type) === 'textarea' && (
         <textarea
           value={
-            textValueAnswer(questNumber, currentAnswers, testData)
+            textValueAnswer(questNumber, currentAnswers, testData)!=='undefined'
               ? textValueAnswer(questNumber, currentAnswers, testData)
               : ''
           }

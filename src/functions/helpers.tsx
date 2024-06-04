@@ -1,9 +1,14 @@
-import { DataElementType } from '../types/Types';
+import { DataElementType} from '../types/Types';
 
-export const checkedCompare = (el: DataElementType, arrayEl: DataElementType[]) => {
+export const checkedCompare = (el: number, arrayEl: [el: number]) => {
   return arrayEl.includes(el);
 };
 
-export const textValueAnswer = (questNumber: number, currentAnswers: [], testData: DataElementType[]) => {
-  return currentAnswers?.length !== 0 ? currentAnswers : testData[questNumber]?.userAnswer[0];
+export const textValueAnswer = (
+  questNumber: number,
+  currentAnswers: string | number[],
+  testData: DataElementType[],
+) => {
+  return  String(currentAnswers?.length !== 0 ? currentAnswers : testData[questNumber]?.userAnswer[0])
+      
 };

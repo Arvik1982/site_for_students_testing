@@ -1,4 +1,4 @@
-import { SetStateAction, useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './timer.module.css';
 import getTimerValue from '../../functions/getTimerValue';
 
