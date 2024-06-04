@@ -1,0 +1,13 @@
+.content__container_answers {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.container__answers_content {
+  gap: 5px;
+  display: flex;
+  align-items: center;
+}
+.container__answers_text
+{text-align: left};

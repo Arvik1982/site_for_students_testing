@@ -1,0 +1,9 @@
+.content{
+    display: flex;
+    gap: 2px;
+}
+.content_element{
+    width: 50px;
+    height: 8px;
+    
+}

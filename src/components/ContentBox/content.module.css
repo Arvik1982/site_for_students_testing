@@ -1,0 +1,17 @@
+.content__container {
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  width: 700px;
+  align-items: flex-start;
+  height: 400px;
+}
+.content__container_title {
+  text-align: left;
+  font-size: large;
+  font-weight: bolder;
+  width: 600px;
+}

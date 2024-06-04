@@ -1,0 +1,8 @@
+.timer__container{
+    border: solid 1px gainsboro;
+    border-radius: 2px;   
+}
+.timer__container_text{
+    margin: 0;
+    padding: 5px;
+}
