@@ -8,7 +8,7 @@ export type DataElementType = {
   type: string;
   answers?: Array<{ id: number; answer: string }>;
   right?: Array<number> | string;
-  userAnswer: Array<number> | string;
+  userAnswer: Array<number>
 };
 
 export type VariantsType = {

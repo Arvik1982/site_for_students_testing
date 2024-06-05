@@ -48,7 +48,15 @@ export default function QuestionElement({ type }: QuestionPropType) {
       dispatch(updateData([el_id]));
     }
     if (typeSelect(type) === 'checkbox') {
-      dispatch(updateData([...currentAnswers, el_id]));
+      el_id?dispatch(
+        updateData(
+          currentAnswers.includes(el_id)
+            ? currentAnswers.filter((el) => {
+                return el !== el_id;
+              })
+            : [...currentAnswers, el_id],
+        ),
+      ):'';
     }
     if (typeSelect(type) === 'text') {
       dispatch(updateData([e?.target.value]));
@@ -85,7 +93,7 @@ export default function QuestionElement({ type }: QuestionPropType) {
       {typeSelectInput(type) === 'text' && (
         <input
           value={
-            textValueAnswer(questNumber, currentAnswers, testData)!=='undefined'
+            textValueAnswer(questNumber, currentAnswers, testData) !== 'undefined'
               ? textValueAnswer(questNumber, currentAnswers, testData)
               : ''
           }
@@ -99,7 +107,7 @@ export default function QuestionElement({ type }: QuestionPropType) {
       {typeSelectInput(type) === 'textarea' && (
         <textarea
           value={
-            textValueAnswer(questNumber, currentAnswers, testData)!=='undefined'
+            textValueAnswer(questNumber, currentAnswers, testData) !== 'undefined'
               ? textValueAnswer(questNumber, currentAnswers, testData)
               : ''
           }
