@@ -31,4 +31,4 @@ Redux/toolkit
 Запуск: npm run dev; 
 Для работы с приложением перейдите: http://localhost:5173/
 
-## Deploy проекта на nenetlify:
+## Deploy проекта на nenetlify: https://teststudy.netlify.app/
